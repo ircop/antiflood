@@ -11,7 +11,10 @@
     }
   ],
   "minimum-stability": "dev",
-  "require": {},
+  "require": {
+    "php": ">=5.5",
+    "laravel/framework": "5.1.*"
+  },
   "autoload": {
     "psr-4": {
       "Ircop\\Antiflood\\": "src/"
