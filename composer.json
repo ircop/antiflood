@@ -1,0 +1,20 @@
+{
+  "name": "ircop/antiflood",
+  "description": "Request flood protection for laravel",
+  "license": "GPLv2",
+  "type": "",
+  "keywords": ["laravel", "flood", "spam", "antiflood"],
+  "authors": [
+    {
+      "name": "wingman",
+      "email": "wingman@ip-home.net"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Ircop\\Antiflood\\": "src/"
+    }
+  }
+}
