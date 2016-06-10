@@ -9,7 +9,7 @@ It makes it easy to add some protection from DB ddos or bruteforce attack.
 1: install via composer
 
 ```
-composer require ircop/passworder
+composer require ircop/antiflood
 ```
 
 2: add service provider to `providers` array in `config/app.php`:
