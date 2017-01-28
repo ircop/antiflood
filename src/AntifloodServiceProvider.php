@@ -29,7 +29,7 @@ class AntifloodServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['antiflood'] = $this->app->share(function($app) {
+        $this->app->singleton('antiflood', function ($app) {
             return new Antiflood;
         });
     }
