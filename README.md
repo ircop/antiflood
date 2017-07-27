@@ -32,14 +32,22 @@ Ident can be ip-address, login, anything unique.
 
 $maximum - is maximum allowed value for this ident. Default is 1.
 
-```
+```php
 \Antiflood::check( $ident, $maximum = 1 );
+
+// Or with IP identity
+
+\Antiflood::checkIP( $maximum = 1 );
 ```
 
 
 Putting record for given ident on given $minutes:
-```
+```php
 \Antiflood::put( $ident, $minutes = 10 );
+
+// Or with IP identity
+
+\Antiflood::putIP( $minutes = 10 );
 ```
 
 ## Examples:
