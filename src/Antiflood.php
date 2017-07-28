@@ -8,7 +8,6 @@
 
 namespace Ircop\Antiflood;
 
-
 class Antiflood
 {
     /**
@@ -34,6 +33,13 @@ class Antiflood
 
         return false;
     }
+    /**
+     * @return bool
+     */
+    public function checkIP( $max = 1 )
+    {
+        return $this->check( $_SERVER['REMOTE_ADDR'], $max );
+    }
 
     /**
      * pushes identify key to cache
@@ -53,5 +59,15 @@ class Antiflood
         } else {
             \Cache::put($key, 1, $minutes);
         }
+    }
+
+    /**
+     * pushes identify key to cache
+     *
+     * @param int $minutes
+     */
+    public function putIP( $minutes = 10 )
+    {
+        $this->put( $_SERVER['REMOTE_ADDR'], $minutes );
     }
 }

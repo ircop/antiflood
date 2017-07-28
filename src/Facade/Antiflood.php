@@ -7,6 +7,7 @@
  */
 
 namespace Ircop\Antiflood\Facade;
+
 use Illuminate\Support\Facades\Facade;
 
 class Antiflood extends Facade
